@@ -42,6 +42,9 @@ var TodoInput = React.createClass({
 	handleSubmit: function(event){
 		event.preventDefault();
 		this.props.addTodo(this.state.value);
+		this.setState({
+			value: ''
+		})
 	},
 	handleChange: function(event){
 		this.setState({
