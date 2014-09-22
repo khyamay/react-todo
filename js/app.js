@@ -47,11 +47,12 @@ var TodoInput = React.createClass({
 		this.setState({
 			value: event.target.value
 		});
+
 	},
 	render: function(){
 		return(
 				<form onSubmit={this.handleSubmit}>
-				<input type="text" onChange={this.handleChange} value={this.state.value} />
+				<input type="text" required="required" onChange={this.handleChange} value={this.state.value} />
 				<button type="submit">Add</button>
 				</form>
 			);
